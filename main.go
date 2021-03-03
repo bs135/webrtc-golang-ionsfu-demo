@@ -120,9 +120,7 @@ func main() {
 
 	go readMessage(c, done)
 
-	fmt.Println("=============================================")
 	fmt.Println(mediadevices.EnumerateDevices())
-	fmt.Println("=============================================")
 
 	s, err := mediadevices.GetUserMedia(mediadevices.MediaStreamConstraints{
 		Video: func(c *mediadevices.MediaTrackConstraints) {
